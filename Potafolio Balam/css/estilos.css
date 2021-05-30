@@ -1,0 +1,375 @@
+/* Estilos Generales*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(4, 4, 53, .5) 82.29%, rgba(206, 18, 183, .4) 100%), url("../assets/Screenshot_24_digital_art_x4.png");
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    padding: 25px 25px;
+}
+
+
+/* Botones */
+
+.contenedor-titulo a,
+.acerca-de-mi a {
+    font-size: 14px;
+    color: #040435;
+    background: #fff;
+    padding: 5px 34px;
+    width: 128px;
+    border-radius: 34px;
+}
+
+.contenedor-titulo a:hover {
+    color: white;
+    background: #5826BD;
+}
+
+.acerca-de-mi a {
+    font-size: 1.5em;
+    background: #5826BD;
+    color: white;
+}
+
+
+/* Navbar */
+
+.contenedor {
+    justify-content: space-between;
+}
+
+.contenedor img {
+    margin-top: 20px;
+}
+
+.lista-menu {
+    font-size: 18px;
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+}
+
+.lista-menu li {
+    margin-left: 1em;
+}
+
+.lista-menu li a {
+    color: #B3A2B1;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.lista-menu li a:hover {
+    color: white;
+}
+
+.lista-menu li a.active {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.lista-menu li a.active:hover {
+    color: #040435;
+    background: white;
+}
+
+
+/* Titulo y presentación */
+
+.contenedor-titulo {
+    color: white;
+    font-size: 3.5em;
+    padding-top: 3em;
+}
+
+.contenedor-titulo h1 {
+    font-size: 1em;
+}
+
+.contenedor-titulo h2 {
+    font-size: .6em;
+}
+
+.contenedor-titulo a {
+    font-size: .5em;
+}
+
+
+/* Sección Acerca de mí */
+
+.acerca-de-mi {
+    height: auto;
+}
+
+.acerca-de-mi h3 {
+    font-weight: bold;
+    color: #040435;
+}
+
+.acerca-de-mi p {
+    font-size: 16px;
+    font-style: italic;
+    color: #040435;
+}
+
+.acerca-de-mi img {
+    margin-top: 30px;
+}
+
+.btn-contacto {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Mis habilidades */
+
+.mis-habilidades {
+    padding-bottom: 30px;
+}
+
+.mis-habilidades h3 {
+    margin-top: 30px;
+    color: #040435;
+    font-weight: bold;
+}
+
+.habilidades-tx {
+    margin-top: 30px;
+}
+
+.habilidades img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Mis Proyectos */
+
+.mis-proyectos {
+    height: auto;
+    background: #D0CDE1;
+}
+
+.mis-proyectos h3 {
+    padding-top: 30px;
+    color: #040435;
+    font-weight: bold;
+}
+
+.grid-proeject {
+    display: grid;
+    height: 550px;
+    grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5";
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+.item-project {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item-project:nth-of-type(1) {
+    grid-area: img1;
+}
+
+.item-project:nth-of-type(2) {
+    grid-area: img2;
+}
+
+.item-project:nth-of-type(3) {
+    grid-area: img3;
+}
+
+.item-project:nth-of-type(4) {
+    grid-area: img4;
+}
+
+.item-project:nth-of-type(5) {
+    grid-area: img5;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.project-hover {
+    position: absolute;
+    background: #5826BD99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.item-project:hover .project-hover {
+    transform: translateX(0%);
+}
+
+.project-hover h3 {
+    color: #fff;
+}
+
+.icon-project {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #040435;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+}
+
+.marca img {
+    padding-top: 20px;
+    object-fit: cover;
+    width: 35%;
+    height: 35%;
+}
+
+.redes-sociales {
+    padding-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.redes-sociales a {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.redes-sociales i {
+    font-size: 45px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 768px) {
+    /* Presentación */
+    .contenedor-titulo {
+        padding-top: 2.5em;
+    }
+    .contenedor-titulo h1 {
+        padding-bottom: 2em;
+    }
+    .contenedor-titulo h2 {
+        padding-bottom: 8em;
+    }
+    /* Mis habilidades */
+    .contenedor-habilidades {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    /* Mis Proyectos*/
+    .grid-proeject {
+        grid-template-areas: "img1 img1 img2 img2" "img1 img1 img3 img3" "img4 img4 img5 img5";
+    }
+    /* Footer */
+    .marca img {
+        width: 50%;
+        height: 50%;
+    }
+    .redes-sociales {
+        padding-top: 20px;
+    }
+    .redes-sociales i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .lista-menu {
+        font-size: 14px;
+    }
+    /* Presentación */
+    .contenedor-titulo {
+        font-size: 32px;
+    }
+    .contenedor-titulo h1 {
+        padding-bottom: 2em;
+    }
+    .contenedor-titulo h2 {
+        padding-bottom: 16em;
+    }
+    /* Mis Proyectos*/
+    .grid-proeject {
+        grid-template-areas: "img1" "img2" "img3" "img4" "img5";
+        height: auto;
+        grid-template-rows: repeat(5, 250px);
+        grid-auto-flow: 250px;
+        gap: 10px;
+    }
+    /* Footer */
+    .marca img {
+        width: 85%;
+        height: 85%;
+    }
+    .redes-sociales {
+        padding-top: 20px;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    .redes-sociales i {
+        font-size: 28px;
+    }
+    footer p {
+        font-size: .8em;
+    }
+}
