@@ -373,3 +373,10 @@ footer p {
         font-size: .8em;
     }
 }
+
+@media screen and (max-width: 380px) {
+    /* Presentación */
+    .contenedor-titulo h2 {
+        padding-bottom: 10em;
+    }
+}
